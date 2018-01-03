@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # Environment variables (ENV['...']) can be set in the file .env file.
 
-user = User.new(:email => "web@matheusloureiro.com.br", :password => "web@1qwer", :password_confirmation => "web@1qwer", :name => "Matheus Loureiro", :type_user => 1)
+user = User.new(:email => "admin@admin.com", :password => "123mudar", :password_confirmation => "123mudar", :name => "admin", :type_user => 2, admin: true)
 user.skip_confirmation!
 user.save
 
-user = User.new(:email => "desenvolvimento@matheusloureiro.com.br", :password => "web@1qwer", :password_confirmation => "web@1qwer", :name => "Matheus Loureiro", :type_user => 1)
+user = User.new(:email => "user@user.com", :password => "123mudar", :password_confirmation => "123mudar", :name => "user", :type_user => 1, admin: false)
 user.skip_confirmation!
 user.save

@@ -35,27 +35,19 @@
 #   collation: utf8mb4_unicode_ci
 
 development:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
+  adapter: postgresql
   database: meuproximotrabalho_development
   pool: 5
-  username: root
-  password: geBFuckq4VX6ET
-  host: localhost
-  encoding: utf8mb4
-  collation: utf8mb4_unicode_ci
+  username: postgres
+  password: 
+  host: postgres
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
+  adapter: postgresql
   database: <%= ENV['BD_TABLE'] %>
   pool: 5
   username: <%= ENV['BD_USER'] %>
   password: <%= ENV['BD_PASSWORD'] %>
   host: <%= ENV['BD_SERVER'] %>
-  encoding: utf8mb4
-  collation: utf8mb4_unicode_ci
 
 
